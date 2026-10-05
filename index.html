@@ -2,15 +2,659 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>HUERTA ROBERT 10C F26</title>
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Robert B. Huerta | Digital Media Education & Creative Development</title>
+    <meta
+      name="description"
+      content="Digital Media Educator & Developer at Santa Monica College. Exploring contemporary web engineering, creative technology, and digital design."
+    />
+    <meta name="theme-color" content="#070709" />
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Robert B. Huerta | Digital Media Educator & Developer" />
+    <meta
+      property="og:description"
+      content="Digital Media Educator & Developer at Santa Monica College. Teaching Art 10C, web design, and creative technology."
+    />
+    <meta property="og:url" content="https://huertamor.github.io/huertarobert" />
+
+    <!-- Fonts: Inter & JetBrains Mono -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
-
-
   </head>
   <body>
-<img src="images/demo.png" alt="cat with red eyes" width="500" height="500">
-          YOU MADE IT!
+    <!-- Background Ambient Glow Effects -->
+    <div class="glow-orb glow-top-left" aria-hidden="true"></div>
+    <div class="glow-orb glow-top-right" aria-hidden="true"></div>
 
+    <!-- Navigation Header -->
+    <header class="site-header" id="top">
+      <div class="container header-container">
+        <a href="#top" class="brand-link" aria-label="Robert Huerta Home">
+          <span class="brand-monogram">RH</span>
+          <span class="brand-name">Robert Huerta</span>
+        </a>
+
+        <div class="status-indicator-badge">
+          <span class="status-dot"></span>
+          <span class="status-text">SMC • Digital Media & Art</span>
+        </div>
+
+        <nav class="site-nav" id="siteNav" aria-label="Primary Navigation">
+          <ul class="nav-list">
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#courses" class="nav-link">Courses</a></li>
+            <li><a href="#projects" class="nav-link">Demos & Work</a></li>
+            <li><a href="#toolkit" class="nav-link">Toolkit</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <a
+            href="https://github.com/huertamor"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="icon-button"
+            aria-label="GitHub Profile"
+            title="GitHub (huertamor)"
+          >
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"
+              />
+            </svg>
+          </a>
+          <button
+            type="button"
+            class="copy-btn copy-email-btn header-email-btn"
+            data-email="huerta_robert@smc.edu"
+            aria-label="Copy professional email address"
+          >
+            <span class="btn-text">Email</span>
+            <svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+            </svg>
+          </button>
+          <button
+            type="button"
+            class="mobile-toggle"
+            id="mobileMenuToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="siteNav"
+          >
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+            <span class="hamburger-bar"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="hero-section" aria-labelledby="hero-title">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <span class="badge-dot"></span>
+              <span class="badge-label">Digital Media Education & Web Craft</span>
+            </div>
+
+            <h1 id="hero-title" class="hero-heading">
+              Shaping the future of digital art, code, and creative media.
+            </h1>
+
+            <p class="hero-subhead">
+              I’m <strong>Robert B. Huerta</strong>, educator and developer teaching digital design, interactive web development, and media arts at <strong>Santa Monica College</strong>. I guide students through modern code architecture, visual composition, and practical web workflows.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#courses" class="btn btn-primary">
+                Explore Courses & Demos
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+
+              <button
+                type="button"
+                class="btn btn-secondary copy-email-btn"
+                data-email="huerta_robert@smc.edu"
+              >
+                <span>Copy Email (huerta_robert@smc.edu)</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="hero-meta-strip">
+              <div class="meta-item">
+                <span class="meta-number">ART 10C</span>
+                <span class="meta-desc">Design for the Web</span>
+              </div>
+              <div class="meta-divider" aria-hidden="true"></div>
+              <div class="meta-item">
+                <span class="meta-number">GitHub Pages</span>
+                <span class="meta-desc">Live Deployment Lab</span>
+              </div>
+              <div class="meta-divider" aria-hidden="true"></div>
+              <div class="meta-item">
+                <span class="meta-number">SMC</span>
+                <span class="meta-desc">Santa Monica College</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hero Terminal / Code Showcase Card -->
+          <div class="hero-preview" aria-hidden="true">
+            <div class="terminal-card">
+              <div class="terminal-header">
+                <div class="terminal-dots">
+                  <span class="dot red"></span>
+                  <span class="dot yellow"></span>
+                  <span class="dot green"></span>
+                </div>
+                <div class="terminal-title">instructor.config.ts</div>
+                <div class="terminal-badge">active</div>
+              </div>
+              <div class="terminal-body">
+                <pre><code><span class="code-keyword">const</span> <span class="code-def">instructor</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Robert B. Huerta"</span>,
+  <span class="code-prop">department</span>: <span class="code-string">"Art & Digital Media"</span>,
+  <span class="code-prop">institution</span>: <span class="code-string">"Santa Monica College"</span>,
+  <span class="code-prop">courses</span>: [
+    <span class="code-string">"ART 10C: Design for the Web"</span>,
+    <span class="code-string">"ART 10A: Digital Media Foundations"</span>
+  ],
+  <span class="code-prop">coreFocus</span>: [
+    <span class="code-string">"Semantic HTML5 & Modern CSS"</span>,
+    <span class="code-string">"Responsive UI / UX Design"</span>,
+    <span class="code-string">"Git & Open-Source Publishing"</span>,
+    <span class="code-string">"Digital Asset Optimization"</span>
+  ],
+  <span class="code-prop">contact</span>: <span class="code-string">"huerta_robert@smc.edu"</span>
+};
+
+<span class="code-comment">// Empowering students to build the web with confidence</span>
+<span class="code-fn">export default</span> instructor;</code></pre>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About & Pedagogy Section -->
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Philosophy & Background</span>
+            <h2 id="about-title" class="section-title">Teaching the craft of modern digital creation.</h2>
+            <p class="section-lead">
+              Digital media education thrives when technical precision and artistic intuition come together. My courses are designed to break down the complexities of modern web design into practical, empowering milestones.
+            </p>
+          </div>
+
+          <div class="grid grid-3">
+            <div class="card pillar-card">
+              <div class="card-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="16 18 22 12 16 6"></polyline>
+                  <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+              </div>
+              <h3 class="card-title">Code as Creative Medium</h3>
+              <p class="card-text">
+                Moving beyond template builders: teaching students to write semantic, clean HTML and modern CSS by hand to unlock total design control and accessibility.
+              </p>
+            </div>
+
+            <div class="card pillar-card">
+              <div class="card-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                  <line x1="8" y1="21" x2="16" y2="21"></line>
+                  <line x1="12" y1="17" x2="12" y2="21"></line>
+                </svg>
+              </div>
+              <h3 class="card-title">Production-Ready Workflows</h3>
+              <p class="card-text">
+                Fostering authentic industry standards through Git version control, GitHub Pages cloud hosting, browser developer tooling, and asset pipeline efficiency.
+              </p>
+            </div>
+
+            <div class="card pillar-card">
+              <div class="card-icon-wrapper">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
+                </svg>
+              </div>
+              <h3 class="card-title">Visual Literacy & Intent</h3>
+              <p class="card-text">
+                Bridging typography, hierarchy, color theory, and responsive layout systems so student projects are visually compelling across every screen size.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Courses Section -->
+      <section class="section courses-section" id="courses" aria-labelledby="courses-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Instruction & Curriculum</span>
+            <h2 id="courses-title" class="section-title">Courses at Santa Monica College</h2>
+            <p class="section-lead">
+              Hands-on lab courses combining design principles with contemporary web practices.
+            </p>
+          </div>
+
+          <div class="course-list">
+            <!-- ART 10C -->
+            <article class="card course-card highlight-card">
+              <div class="course-badge-row">
+                <span class="course-code">ART 10C</span>
+                <span class="course-term">Fall 2026 • Santa Monica College</span>
+              </div>
+              <div class="course-main-content">
+                <h3 class="course-title">Design for the Web: Principles, Coding & Interactivity</h3>
+                <p class="course-description">
+                  A foundational studio course exploring web design as both a communication system and a personal expressive medium. Students learn how to plan site architectures, author semantic HTML, create fluid responsive layouts with modern CSS, and deploy public projects using Git and GitHub Pages.
+                </p>
+                <div class="course-topics">
+                  <span class="topic-tag">HTML5 Semantics</span>
+                  <span class="topic-tag">Responsive CSS & Flexbox/Grid</span>
+                  <span class="topic-tag">Typography & Color Systems</span>
+                  <span class="topic-tag">Image Optimization & Formats</span>
+                  <span class="topic-tag">GitHub Pages Deployment</span>
+                  <span class="topic-tag">UX & Interactive Principles</span>
+                </div>
+              </div>
+              <div class="course-footer-row">
+                <div class="course-stat">
+                  <span class="stat-label">Format</span>
+                  <span class="stat-value">Studio Lecture & Hands-on Lab</span>
+                </div>
+                <div class="course-stat">
+                  <span class="stat-label">Prerequisites</span>
+                  <span class="stat-value">Art Foundations or Instructor Approval</span>
+                </div>
+                <a href="#projects" class="btn btn-sm btn-outline">View Class Demos</a>
+              </div>
+            </article>
+
+            <!-- ART 10A / Digital Media Foundations -->
+            <article class="card course-card">
+              <div class="course-badge-row">
+                <span class="course-code">ART 10A</span>
+                <span class="course-term">Digital Media Curriculum</span>
+              </div>
+              <div class="course-main-content">
+                <h3 class="course-title">Digital Media Foundations: Imaging, Vector & Compositing</h3>
+                <p class="course-description">
+                  Introduction to digital imaging, vector illustration, and creative technology. Covers raster scanning workflows, pixel manipulation, digital collage, vector construction, and file organization protocols essential for creative industries.
+                </p>
+                <div class="course-topics">
+                  <span class="topic-tag">Raster Imaging</span>
+                  <span class="topic-tag">Vector Graphics</span>
+                  <span class="topic-tag">Scan & Capture Protocols</span>
+                  <span class="topic-tag">Digital File Management</span>
+                  <span class="topic-tag">Creative Problem Solving</span>
+                </div>
+              </div>
+              <div class="course-footer-row">
+                <div class="course-stat">
+                  <span class="stat-label">Format</span>
+                  <span class="stat-value">Creative Computing Studio</span>
+                </div>
+                <div class="course-stat">
+                  <span class="stat-label">Focus</span>
+                  <span class="stat-value">Visual Composition & Digital Tools</span>
+                </div>
+                <a href="#contact" class="btn btn-sm btn-outline">Course Inquiry</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects & Lab Demos Section -->
+      <section class="section projects-section" id="projects" aria-labelledby="projects-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Demonstrations & Labs</span>
+            <h2 id="projects-title" class="section-title">Classroom Demos & Project Starters</h2>
+            <p class="section-lead">
+              Code examples, visual asset studies, and interactive templates built for student exploration.
+            </p>
+          </div>
+
+          <div class="grid grid-2">
+            <!-- Project 1: GitHub Pages Student Showcase Template -->
+            <article class="card project-card">
+              <div class="project-header">
+                <div class="project-category">Lab Starter Template</div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/huertamor/huertarobert"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    aria-label="View Source on GitHub"
+                    title="View Source on GitHub"
+                  >
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true">
+                      <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Student Portfolio Architecture</h3>
+                <p class="project-description">
+                  A sleek, zero-dependency GitHub Pages template illustrating proper folder hierarchies, relative path linking, mobile-responsive viewports, and clean CSS layout techniques.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML5</span>
+                  <span class="tag">Vanilla CSS</span>
+                  <span class="tag">GitHub Pages</span>
+                  <span class="tag">Responsive</span>
+                </div>
+              </div>
+              <div class="project-meta-footer">
+                <span class="status-pill active-pill">Active Reference</span>
+                <span class="repo-name">huertamor/huertarobert</span>
+              </div>
+            </article>
+
+            <!-- Project 2: Image Optimization & Visual Assets Demo -->
+            <article class="card project-card">
+              <div class="project-header">
+                <div class="project-category">Art 10C Asset Lab</div>
+                <div class="project-links">
+                  <a
+                    href="images/demo.png"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                    aria-label="View demo asset image"
+                    title="View Original Asset"
+                  >
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="project-media-preview">
+                <img
+                  src="images/demo.png"
+                  alt="Art 10C Classroom demo visual asset"
+                  class="project-thumbnail"
+                  loading="lazy"
+                />
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Digital Asset & Media Optimization</h3>
+                <p class="project-description">
+                  Demonstrating proper preparation of high-fidelity imagery for the web: balancing image compression, resolution density, aspect ratios, responsive scaling, and alternative text accessibility.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Image Optimization</span>
+                  <span class="tag">Web Performance</span>
+                  <span class="tag">Alt-Text A11y</span>
+                </div>
+              </div>
+              <div class="project-meta-footer">
+                <span class="status-pill">Lab Resource</span>
+                <span class="repo-name">images/demo.png</span>
+              </div>
+            </article>
+
+            <!-- Project 3: Responsive Layout Matrix -->
+            <article class="card project-card">
+              <div class="project-header">
+                <div class="project-category">Interactive Exercise</div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">CSS Grid vs Flexbox Blueprint</h3>
+                <p class="project-description">
+                  A side-by-side interactive study showcasing when to utilize CSS Flexbox for 1D navigation systems versus CSS Grid for 2D editorial magazine layouts, including subgrid and fluid clamp typography.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">CSS Grid</span>
+                  <span class="tag">Flexbox</span>
+                  <span class="tag">Fluid Type</span>
+                  <span class="tag">Modern UI</span>
+                </div>
+              </div>
+              <div class="project-meta-footer">
+                <span class="status-pill active-pill">Curriculum Module</span>
+                <span class="repo-name">Art 10C • Unit 3</span>
+              </div>
+            </article>
+
+            <!-- Project 4: Version Control & Git Protocols -->
+            <article class="card project-card">
+              <div class="project-header">
+                <div class="project-category">Workflow Guide</div>
+              </div>
+              <div class="project-body">
+                <h3 class="project-title">Git & Open Source for Designers</h3>
+                <p class="project-description">
+                  Demystifying terminal commands, staging, atomic commits, branches, and remote repositories for art students transitioning into interactive digital media and web production.
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Git CLI</span>
+                  <span class="tag">GitHub</span>
+                  <span class="tag">Terminal</span>
+                  <span class="tag">Collaboration</span>
+                </div>
+              </div>
+              <div class="project-meta-footer">
+                <span class="status-pill">Student Handbook</span>
+                <span class="repo-name">Art 10C • Guidebook</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Technical & Pedagogical Toolkit Section -->
+      <section class="section toolkit-section" id="toolkit" aria-labelledby="toolkit-title">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Skills & Technologies</span>
+            <h2 id="toolkit-title" class="section-title">Technical & Creative Toolkit</h2>
+            <p class="section-lead">
+              The tools, languages, and methodologies integrated into classroom instruction and modern web development.
+            </p>
+          </div>
+
+          <div class="grid grid-3">
+            <div class="card skill-card">
+              <div class="skill-category-header">
+                <span class="skill-icon">⚡</span>
+                <h3 class="skill-group-title">Web Technologies</h3>
+              </div>
+              <ul class="skill-list">
+                <li><span class="skill-bullet"></span>HTML5 Semantic Markup</li>
+                <li><span class="skill-bullet"></span>CSS3 (Grid, Flexbox, Custom Properties)</li>
+                <li><span class="skill-bullet"></span>Modern JavaScript (ES6+)</li>
+                <li><span class="skill-bullet"></span>Responsive & Mobile-First Architecture</li>
+                <li><span class="skill-bullet"></span>Web Accessibility (WCAG 2.1)</li>
+              </ul>
+            </div>
+
+            <div class="card skill-card">
+              <div class="skill-category-header">
+                <span class="skill-icon">🎨</span>
+                <h3 class="skill-group-title">Digital Media & Design</h3>
+              </div>
+              <ul class="skill-list">
+                <li><span class="skill-bullet"></span>Adobe Photoshop (Raster & Compositing)</li>
+                <li><span class="skill-bullet"></span>Adobe Illustrator (Vector Design)</li>
+                <li><span class="skill-bullet"></span>Typography & Spatial Composition</li>
+                <li><span class="skill-bullet"></span>UI/UX Prototyping & Wireframing</li>
+                <li><span class="skill-bullet"></span>Digital Asset Scanning & Archiving</li>
+              </ul>
+            </div>
+
+            <div class="card skill-card">
+              <div class="skill-category-header">
+                <span class="skill-icon">🛠️</span>
+                <h3 class="skill-group-title">Development & Deployment</h3>
+              </div>
+              <ul class="skill-list">
+                <li><span class="skill-bullet"></span>Git & GitHub Pages</li>
+                <li><span class="skill-bullet"></span>VS Code & Extension Workflows</li>
+                <li><span class="skill-bullet"></span>Browser DevTools & Inspection</li>
+                <li><span class="skill-bullet"></span>Unix Command Line Basics</li>
+                <li><span class="skill-bullet"></span>Creative Open-Source Tooling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact & Office Hours Section -->
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact-card card">
+            <div class="contact-glow" aria-hidden="true"></div>
+            <div class="contact-content">
+              <span class="section-tag">Direct Communication</span>
+              <h2 id="contact-title" class="contact-title">Let’s connect and collaborate.</h2>
+              <p class="contact-description">
+                Whether you’re an enrolled SMC student with questions regarding Art 10C coursework, an academic colleague, or a developer interested in digital media pedagogy, feel free to reach out.
+              </p>
+
+              <div class="contact-channels">
+                <!-- Email Channel -->
+                <div class="channel-card">
+                  <div class="channel-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                      <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                  </div>
+                  <div class="channel-info">
+                    <span class="channel-label">Academic & Professional Email</span>
+                    <a href="mailto:huerta_robert@smc.edu" class="channel-value">huerta_robert@smc.edu</a>
+                  </div>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-primary copy-email-btn"
+                    data-email="huerta_robert@smc.edu"
+                    aria-label="Copy huerta_robert@smc.edu to clipboard"
+                  >
+                    <span>Copy</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                      <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                    </svg>
+                  </button>
+                </div>
+
+                <!-- GitHub Channel -->
+                <div class="channel-card">
+                  <div class="channel-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true">
+                      <path d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                    </svg>
+                  </div>
+                  <div class="channel-info">
+                    <span class="channel-label">Open Source & Course Code</span>
+                    <a
+                      href="https://github.com/huertamor"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="channel-value"
+                    >github.com/huertamor</a>
+                  </div>
+                  <a
+                    href="https://github.com/huertamor"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-sm btn-outline"
+                  >
+                    <span>Visit</span>
+                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                      <polyline points="15 3 21 3 21 9"></polyline>
+                      <line x1="10" y1="14" x2="21" y2="3"></line>
+                    </svg>
+                  </a>
+                </div>
+
+                <!-- Academic Institution -->
+                <div class="channel-card">
+                  <div class="channel-icon">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                      <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                      <path d="M6 12v5c3 3 9 3 12 0v-5"></path>
+                    </svg>
+                  </div>
+                  <div class="channel-info">
+                    <span class="channel-label">Department & Campus</span>
+                    <span class="channel-value-static">Art & Design Technology • Santa Monica College</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-container">
+        <div class="footer-left">
+          <span class="footer-brand">Robert B. Huerta</span>
+          <p class="footer-copy">
+            © <span id="currentYear">2026</span> Robert B. Huerta. Built with semantic HTML, modern CSS & vanilla JavaScript.
+          </p>
+        </div>
+
+        <div class="footer-right">
+          <a href="https://github.com/huertamor/huertarobert" class="footer-link" target="_blank" rel="noopener noreferrer">
+            Repository Source
+          </a>
+          <span class="footer-separator">•</span>
+          <a href="https://huertamor.github.io/huertarobert" class="footer-link">
+            GitHub Pages
+          </a>
+          <span class="footer-separator">•</span>
+          <a href="#top" class="footer-link">
+            Back to Top ↑
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Toast Notification for Copy Actions -->
+    <div class="toast-notification" id="toastNotification" role="alert" aria-live="polite">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <polyline points="20 6 9 17 4 12"></polyline>
+      </svg>
+      <span id="toastMessage">Email copied to clipboard!</span>
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>

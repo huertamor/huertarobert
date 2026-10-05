@@ -1,2 +1,44 @@
-DEMO FOR ART 10C FALL 2026
-TAUGHT BY ROBERT B HUERTA
+# Robert B. Huerta — Digital Media & Web Education
+
+Live Site: [huertamor.github.io/huertarobert](https://huertamor.github.io/huertarobert)
+
+Personal portfolio, course demos, and digital media education resources for **Robert B. Huerta**, Instructor of Digital Media & Web Design at Santa Monica College (SMC).
+
+---
+
+## 🎨 Theme & Design System
+- **Aesthetic**: Sleek, minimal dark mode (pure black `#060608` with subtle depth)
+- **Contrast**: Bright white typography (`#ffffff` / `#f8fafc`) for maximum readability
+- **Accent**: Electric cyan/blue (`#00f0ff` / `#38bdf8`) with subtle neon glow effects
+- **Typography**: Inter (sans-serif) and JetBrains Mono (monospace)
+- **Zero Build Step**: Native HTML5, CSS3, and vanilla JavaScript ready for instant GitHub Pages deployment
+
+---
+
+## 📂 Repository Structure
+```
+.
+├── index.html       # Semantic HTML5 structure (Hero, About, Courses, Demos, Toolkit, Contact)
+├── style.css        # Responsive CSS custom properties, grid layouts, glassmorphism, cyan glows
+├── script.js       # Mobile navigation toggle, scrollspy, dynamic footer year, copy-to-clipboard
+├── images/          # Course demo assets & media
+│   └── demo.png     # Art 10C visual demo asset
+└── README           # Repository overview and guide
+```
+
+---
+
+## 🚀 Local Preview
+To test or edit locally:
+```bash
+# Python 3 built-in HTTP server
+python3 -m http.server 8000
+```
+Then visit `http://localhost:8000` in your web browser.
+
+---
+
+## 📬 Contact & Inquiries
+- **Email**: `huerta_robert@smc.edu`
+- **GitHub**: [@huertamor](https://github.com/huertamor)
+- **Institution**: Santa Monica College • Art & Digital Media Department
